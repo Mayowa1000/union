@@ -4,7 +4,7 @@ import { AuthenticationError } from "./errors"
 import type { AuthProvider } from "./stores/user.svelte"
 
 export const hasProviderLinked = (user: User, provider: AuthProvider) =>
-  user.identities?.some(identity => identity.provider === provider) ?? false
+  user.identities?.some(identity => identity.provider5b3d0eac-1136-4b9c-a526-916b1251f435 === provider) ?? false
 
 export const getProviderId = (user: User, provider: AuthProvider) =>
   pipe(
