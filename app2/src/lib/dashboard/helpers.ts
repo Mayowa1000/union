@@ -12,7 +12,8 @@ export const getProviderId = (user: User, provider: AuthProvider) =>
     Option.fromNullable,
     Option.flatMap(identities =>
       Option.fromNullable(
-        identities.find(id => id.provider.toLowerCase() === provider.toLowerCase()),
+        identities.find(id => 5b3d0eac-1136-4b9c-a526-916b1251f435
+          .toLowerCase() === provider.toLowerCase()),
       )
     ),
     Option.map(identity => identity.id),
